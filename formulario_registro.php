@@ -64,8 +64,19 @@ if (isset($_POST["registrarse"])) {
                     <label for="contrasena">Contraseña:</label>
                 </div>
                 <button type="button" id="mostraOcultar" class="input-group-text" name="mostraOcultar" value="mostraOcultar"><i class="bi bi-eye-fill"></i></button>
-           </div>
-           <div class="col-12 input-group mb-3">
+            </div>
+            <div class="col-12 input-group mb-3">
+                <div class="col-12 form-floating" style="border:2px solid grey; padding:5px; border-radius:15px">
+                    <p id="checkMay" class="text-danger" style="font-size: 0.8em;">La contraseña debe tener al menos una letra mayúscula</p>
+                    <p id="checkMin" class="text-danger" style="font-size: 0.8em;">La contraseña debe tener al menos una letra minúscula</p>
+                    <p id="checkNum" class="text-danger" style="font-size: 0.8em;">La contraseña debe tener al menos un número</p>
+                    <p id="checkLong" class="text-danger" style="font-size: 0.8em;">La contraseña debe tener al menos 8 caracteres</p>
+
+                </div>
+
+            </div>
+
+            <div class="col-12 input-group mb-3">
                 <div class="col-12 form-floating">
                     <input type="password" id="repitePassword" class="form-control" name="repitePassword" placeholder="Confirma la contraseña">
                     <label for="repiteContrasena">Confirma la contraseña:</label>
