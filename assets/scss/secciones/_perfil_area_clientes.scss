@@ -1,0 +1,17 @@
+@use '../custom' as *;
+
+#datosUsuario{
+    padding: 20px;
+}
+
+#ajustesUsuario{
+    padding: 20px;
+
+    h3{
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+    a{
+        text-decoration: none;
+    }
+}

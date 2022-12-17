@@ -1,0 +1,45 @@
+//Bootstrap variables to override
+
+//JUMAC theme colors
+//Primary
+$red: #F13D3D;
+$orange: #F7A530;
+$navy: #102237;
+//Secondary
+$grey: #737373;
+$aqua: #00A19A;
+
+//Customer theme colors
+$dark-aqua: #004652;
+$dark-orange: #CF6A2A;
+
+//Overriding Bootstrap color variables
+$primary: $red;
+$secondary: $orange;
+$dark: $navy;
+$info: $dark-aqua;
+$warning: $dark-orange;
+
+//Media querys breakpoints
+$layout-breakpoint-small: 768px;
+$layout-breakpoint-medium: 1024px;
+
+//Font-sizes
+$h1-font-size: 1rem * 3.2;
+$h2-font-size: 1rem * 2.5;
+
+//Buttons
+$btn-font-weight:             700;
+
+$btn-border-radius:           50px;
+$btn-border-radius-sm:        50px;
+$btn-border-radius-lg:        50px;
+
+$btn-padding-y:         .75rem;
+$btn-padding-x:         2rem;
+
+// //Shadow color for form inputs
+$component-active-bg:         $grey;
+
+//Import Bootstrap 5
+@import "../plugins/node_modules/bootstrap/scss/bootstrap.scss";

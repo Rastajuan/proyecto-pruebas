@@ -1,0 +1,34 @@
+{
+  "name": "proyecto",
+  "version": "1.0.0",
+  "description": "Proyecto final del Ciclo Superior de Desarrollo de Aplicaciones Web",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch assets/scss:assets/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Grupo-4-DAW-IFP/proyecto.git"
+  },
+  "keywords": [
+    "php",
+    "mysql",
+    "javascript",
+    "html",
+    "css",
+    "bootstrap",
+    "sass"
+  ],
+  "author": "Juan Ramón García, María Jesús Maciá, Juan Bello, Clara Garnes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Grupo-4-DAW-IFP/proyecto/issues"
+  },
+  "homepage": "https://github.com/Grupo-4-DAW-IFP/proyecto#readme",
+  "devDependencies": {
+    "sass": "^1.56.1"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.3"
+  }
+}

@@ -1,0 +1,77 @@
+@use '../custom' as *;
+
+.panelProveedores{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 78vh;
+
+    .fichasProveedores{
+        position: relative;
+        min-height: 375px;
+        background: $white;
+        padding: 20px;
+        margin: 20px;
+        box-shadow: 0 7px 25px #e3e4e6;
+        border-radius: 20px;
+
+        table{
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+
+            thead td{
+                font-weight: 600;
+            }
+
+            tbody tr{
+                color: $black;
+                border-bottom: 1px solid #e3e4e6;
+            }
+
+            tbody tr:last-child{
+                border-bottom: none;
+            }
+
+            tbody tr:hover{
+                background: $gray-200;
+            }
+
+            tr td:last-child{
+                text-align: center;
+                padding-left: 15px;
+            }
+        }
+    }
+    
+    .tituloSubseccion{
+        padding-left: 20px;
+        font-size: 1.5rem;
+    }
+    
+    .cajasTransportistas{
+        position: relative;
+        width: 100%;
+        padding: 20px;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-gap: 30px;
+    
+        .cajaTransportista{
+            position: relative;
+            background: $white;
+            padding: 20px;
+            border-radius: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 7px 25px #e3e4e6;
+    
+            .iconBorrarTrasnportista a{
+                color: $gray-500;
+                font-size: 1em;
+            }
+        }
+    }
+}
+

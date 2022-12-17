@@ -1,0 +1,18 @@
+@use 'custom';
+
+@use 'componentes/mixins';
+@use 'componentes/tipografia';
+@use 'componentes/botones';
+@use 'componentes/formularios';
+@use 'componentes/componentes_comunes_cliente';
+@use 'componentes/componentes_comunes_jumac';
+@use 'componentes/slider_web_cliente';
+
+@use 'secciones/dashboard_jumac';
+@use 'secciones/home_cliente';
+@use 'secciones/inicio_area_clientes';
+@use 'secciones/proveedores_jumac';
+@use 'secciones/clientes_jumac';
+@use 'secciones/perfil_jumac';
+@use 'secciones/perfil_area_clientes';
+@use 'secciones/pedidos_jumac';

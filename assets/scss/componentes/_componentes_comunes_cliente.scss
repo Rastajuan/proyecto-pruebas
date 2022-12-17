@@ -1,0 +1,29 @@
+@use '../custom' as *;
+
+.link-menu-cliente{
+    color: $white !important;
+}
+
+.footerCliente{
+    background-color: $dark-aqua;
+    padding: 3rem;
+
+    a, i{
+        color: $white;
+        text-decoration: none;
+    }
+}
+
+.buscadorAC {
+    height: 35px;
+}
+
+.volverInicioAC{
+    color: $grey;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.bienvenida h1 {
+    padding: 20px;
+}

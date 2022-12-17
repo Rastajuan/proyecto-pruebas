@@ -1,0 +1,78 @@
+@use '../custom' as *;
+
+#bannerPrincipalHome{
+    background-image: url("http://localhost/proyecto/assets/images/banner_saxofon.png");
+    background-color: #383838; 
+    height: 100vh;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    color: $white;
+
+    h1{
+        margin-bottom: 1rem;
+    }
+    
+    .banner{
+        font-size: 1.5rem;
+        margin-top: 1rem;
+    }
+}
+
+#serviciosHome{
+    display: block;
+    position: relative;
+    top: -22rem;
+    margin-bottom: -17rem;
+
+    .cardTabs{
+        width: 15rem;
+
+        .card-title{
+            margin-top: 1rem;
+            text-align: center;
+        }
+
+        .card-text{
+            text-align: center;
+            margin-top: 1rem; 
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+.mostrarCard {
+    display: block;
+}
+
+.ocultarCard {
+    display: none;
+}
+
+#quienesSomosHome{
+    background-color: $dark-aqua;
+    color: $white;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+#contactoHome{
+    h2{
+        text-align: center;
+    }
+}
+
+#galeriaHome{
+    h2{
+        text-align: center;
+    }
+}
+
+.imgGaleria {
+    height:200px;
+}
+
+.imgGrande{
+    max-height: 350px;
+}

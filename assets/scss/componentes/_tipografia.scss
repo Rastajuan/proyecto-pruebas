@@ -1,0 +1,20 @@
+@use '../custom' as *;
+
+//Importing fonts
+@import url(https://fonts.googleapis.com/css2?family=Squada+One&family=Ubuntu&family=Montserrat);
+
+//Font variables
+$squada: 'Squada One', display;
+$ubuntu: 'Ubuntu', sans-serif;
+$montserrat: 'Montserrat', sans-serif;
+
+//Font assign
+body {
+    font-family: $montserrat;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $ubuntu;
+    font-weight: $font-weight-semibold;
+}
+

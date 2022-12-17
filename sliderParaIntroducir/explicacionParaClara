@@ -1,0 +1,17 @@
+Hola Clara,
+
+En esta carpeta estan los archivos css y html del slider 
+
+He intentado meterlo yo en el php pero no me sale, supongo que entrará en conflicto con tus archivos.
+
+El archivo js ya está en sulugar, assets/js/slider.js
+
+Como tu controlas css, supongo que será adecuar el que he puesto yo en esta carpeta a tu hoja de estilo.
+
+En index_web_cliente ya he añadido el script de js. De todas formas, si cambias alguan clase dimeloporque no funcionara como toca.
+
+Ahora mismo si abres el archivo index.html de esta carpeta verás slider funcionando.
+
+Hay dos o tres imagenes que desbordan por altura y no se como solucionarlo. no se si retocar el tamaño de las imagenes o es mejor darles a todas un mismo tamaño con css
+
+Otra cosa, las imagene del archivo html estan con un copia-pega de las que pusiste en la web, no he cambiado ninguna clase ni nada.

@@ -1,0 +1,170 @@
+@use '../custom' as *;
+
+.bienvenido{
+    padding-left: 20px;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.cajasAlertas{
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+
+    .cajaStats{
+        position: relative;
+        background: $white;
+        padding: 30px;
+        border-radius: 20px;
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+        box-shadow: 0 7px 25px #e3e4e6;
+
+        .numeros{
+            position: relative;
+            font-weight: 700;
+            font-size: 2.5em;
+            color: $primary;
+        }
+
+        .cardTitulo{
+            color: $black;
+            font-size: 1.1em;
+            margin-top: 5px;
+        }
+
+        .iconBox{
+            font-size: 2.5em;
+            color: $gray-500;
+        }
+    }
+
+    .cajaStats:hover{
+        background: $primary;
+    }
+
+    .cajaStats:hover .numeros,
+    .cajaStats:hover .cardTitulo,
+    .cajaStats:hover .iconBox{
+        color: $white;
+    }
+}
+
+.tablasResumen{
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 30px;
+
+    .pedidosRecientes{
+        position: relative;
+        display: grid;
+        min-height: 400px;
+        background: $white;
+        padding: 20px;
+        box-shadow: 0 7px 25px #e3e4e6;
+        border-radius: 20px;
+
+        table{
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+
+            thead td{
+                font-weight: 600;
+            }
+
+            tbody tr{
+                color: $black;
+                border-bottom: 1px solid #e3e4e6;
+            }
+
+            tbody tr:last-child{
+                border-bottom: none;
+            }
+
+            tbody tr:hover{
+                background: $gray-200;
+            }
+
+            tr td:last-child{
+                text-align: center;
+                padding-left: 15px;
+            }
+
+            tr td:nth-child(3){
+                text-align: end;
+            }
+
+            .estado.nuevo{
+                padding: 2px 4px;
+                background: $primary;
+                color: white;
+                border-radius: 4px;
+                font-size: 14px;
+            }
+
+            .estado.enCurso{
+                padding: 2px 4px;
+                background: $secondary;
+                color: white;
+                border-radius: 4px;
+                font-size: 14px;
+            }
+
+            .estado.enviado{
+                padding: 2px 4px;
+                background: #00A19A;
+                color: white;
+                border-radius: 4px;
+                font-size: 14px;
+            }
+
+            .estado.cerrado{
+                padding: 2px 4px;
+                background: $grey;
+                color: white;
+                border-radius: 4px;
+                font-size: 14px;
+            }
+        }
+    }
+
+    .cardCabecera{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        h2{
+            font-weight: 600;
+            font-size: 1.7rem;              
+        }
+
+        a{
+            position: relative;
+            padding: 5px 10px;
+            background: $gray-500;
+            text-decoration: none;
+            color: $white;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+    }
+
+    .mensajesRecientes{
+        position: relative;
+        display: grid;
+        min-height: 400px;
+        background: $white;
+        padding: 20px;
+        box-shadow: 0 7px 25px #e3e4e6;
+        border-radius: 20px;
+    }
+}
+

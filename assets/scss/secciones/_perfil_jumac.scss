@@ -1,0 +1,32 @@
+@use '../custom' as *;
+
+.imgPerfil{
+    position: relative;
+    min-width: 200px;
+    height: 200px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+
+    .imagenUsuario{
+        height: 200px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+}
+
+#datosAdmin{
+    padding: 20px;
+}
+
+#ajustesAdmin{
+    padding: 20px;
+
+    h3{
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+    a{
+        text-decoration: none;
+    }
+}

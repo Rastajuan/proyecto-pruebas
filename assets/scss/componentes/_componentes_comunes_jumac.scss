@@ -1,0 +1,204 @@
+@use '../custom' as *;
+
+//Menú lateral
+
+.navigationJumac {
+    position: fixed;
+    width: 250px;
+    height: 100vh;
+    background: $navy;
+    border-left: 10px solid $navy;
+    transition: 0.5s;
+    overflow: hidden;
+
+    ul {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding-left: 0.2rem;
+
+        li{
+            position: relative;
+            width: 100%;
+            list-style: none;
+            border-top-left-radius: 30px;
+            border-bottom-left-radius: 30px;
+
+            a{
+                position: relative;
+                display: block;
+                width: 100%;
+                display: flex;
+                text-decoration: none;
+                color: $white;
+
+                .navIcon{
+                    position: relative;
+                    display: block;
+                    min-width: 60px;
+                    height: 60px;
+                    line-height: 62px;
+                    text-align: center;
+                    font-size: 1.75em;
+                    
+                    .logoSmall{
+                        height: 50px;
+                    }
+                }
+
+                .navTitle{
+                    position: relative;
+                    display: block;
+                    padding: 0 10px;
+                    height: 60px;
+                    line-height: 60px;
+                    text-align: start;
+                    white-space: nowrap;
+                }
+            }
+        }
+
+        li:first-child{
+            .navTitle{
+                font-size: 20px;
+                margin-top: 5px;
+            }
+        }
+
+        li:nth-child(1){
+            margin-bottom: 40px;
+            pointer-events: none;
+        }
+
+        li:hover, li.hovered{
+            background: $white;
+
+            a{
+                color: $navy;
+            }
+
+            a::before{
+                content: '';
+                position: absolute;
+                right: 0;
+                top: -50px;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                box-shadow: 35px 35px 0 10px $white;
+                pointer-events: none;
+            }
+
+            a::after{
+                content: '';
+                position: absolute;
+                right: 0;
+                bottom: -50px;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                box-shadow: 35px -35px 0 10px $white;
+                pointer-events: none;
+            }
+        }
+    }
+}
+
+.navigationJumac.active{
+    width: 80px;
+}
+
+//Barra superior
+
+.panel{
+    position: absolute;
+    width: calc(100% - 250px);
+    left: 250px;
+    min-height: 100vh;
+    background: $white;
+    transition: 0.5s;
+
+    .barraSuperior{
+        width: 100%;
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10px;
+
+        .toggle{
+            position: relative;
+            top: 0;
+            width: 60px;
+            height: 60px;
+            background: $white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2.5em;
+            cursor: pointer;
+        }
+
+        .buscador{
+            position: relative;
+            width: 400px;
+            margin: 0 10px;
+
+            label{
+                position: relative;
+                width: 100%;
+
+                input{
+                    width: 100%;
+                    height: 40px;
+                    border-radius: 40px;
+                    padding: 5px 20px;
+                    padding-left: 35px;
+                    outline: none;
+                    border: 1px solid $grey;
+                }
+
+                i{
+                    position: absolute;
+                    top: 7px;
+                    left: 10px;
+                    font-size: 1.2em;
+                }
+            }
+        }
+
+        .usuario{
+            position: relative;
+            min-width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            overflow: hidden;
+            cursor: pointer;
+
+            .logoPerfil{
+                height: 40px;
+            }
+        }
+    }
+
+    .cabeceraPanel{
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+
+        .tituloPanel{
+            font-size: 2.2rem;
+            text-align: left;
+        }
+    }
+
+    .cabeceraPanel:nth-child(2){
+        text-align: right;
+    }
+}
+
+.panel.active{
+    width: calc(100% - 80px);
+    left: 80px;
+}
