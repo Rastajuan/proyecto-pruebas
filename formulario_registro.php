@@ -113,7 +113,8 @@ if (isset($_POST["registrarse"])) {
     </div>
 
     <!--Llamada al archivo de JS-->
-    <script src="assets/js/validaciones/validacionRegistro.js"></script>
+    <!-- <script src="assets/js/validaciones/validacionRegistro.js"></script> -->
+    <script src="assets/js/validaciones/validacionRegistroPrueba.js"></script>
     <script src="assets/js/mostrarOcultarContraRegistro.js"></script>
 </body>
 
