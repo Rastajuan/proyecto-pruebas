@@ -1,0 +1,36 @@
+#password-valid {
+  display: none;
+}
+.error {
+ border: solid red 1px;
+}
+
+.valid {
+ border: solid green 1px;
+}
+
+.red {
+  color: red;
+}
+
+.green {
+  color: green;
+}
+
+.blue {
+  color: blue;
+  font-size: 20px;
+}
+
+.violet {
+  color: violet;
+}
+
+.hidden {
+  display: none;
+}
+img {
+  width: 15px;
+  height: 15px;
+  vertical-align: middle; /* alinea el icono con el texto en el centro verticalmente */
+}
